@@ -1,0 +1,13 @@
+<div class="postimage-container">
+  <div *ngIf="selectedFlagUrl; else noSelection">
+    <h2>Selected Flag</h2>
+    <img
+      [src]="selectedFlagUrl"
+      alt="Selected Flag"
+      style="width: 200px; height: auto"
+    />
+  </div>
+  <ng-template #noSelection>
+    <p class="no-selection-message">No flag selected.</p>
+  </ng-template>
+</div>

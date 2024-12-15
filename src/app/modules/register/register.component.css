@@ -1,0 +1,15 @@
+.vh-100 {
+  min-height: 100vh;
+}
+
+.text-danger {
+  font-size: 0.875em;
+}
+
+h3 {
+  margin-bottom: 20px;
+}
+
+.link-info {
+  cursor: pointer;
+}

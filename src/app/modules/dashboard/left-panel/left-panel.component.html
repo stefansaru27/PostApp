@@ -1,0 +1,19 @@
+<div class="search-box">
+  <input
+    type="text"
+    [(ngModel)]="searchTerm"
+    placeholder="Search posts..."
+    class="input-box"
+  />
+</div>
+
+<ul>
+  <li
+    *ngFor="let post of posts | filter : searchTerm : 'title'"
+    (click)="selectPost(post.id)"
+    class="button-style"
+    appEllipsis
+  >
+    {{ isPostConfirmed(post.id) ? "✔️ " : "" }}{{ post.title }}
+  </li>
+</ul>

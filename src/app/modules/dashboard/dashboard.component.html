@@ -1,0 +1,24 @@
+<div class="dashboard-container">
+  <app-header></app-header>
+
+  <div class="dashboard-body">
+    <div class="left-panel">
+      <app-left-panel
+        [selectedPostId]="confirmedPostId"
+        (postSelected)="onPostSelected($event)"
+      ></app-left-panel>
+    </div>
+
+    <div class="content">
+      <app-content></app-content>
+    </div>
+
+    <div class="right-panel">
+      <app-right-panel
+        [post]="selectedPost"
+        (postConfirmed)="onPostConfirmed($event)"
+      ></app-right-panel>
+      <app-postimage></app-postimage>
+    </div>
+  </div>
+</div>

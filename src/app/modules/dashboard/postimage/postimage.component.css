@@ -1,0 +1,28 @@
+.postimage-container {
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 15px;
+}
+
+.postimage-container h2 {
+  font-size: 1.5rem;
+  color: #343a40;
+  margin-bottom: 10px;
+}
+
+/* Image styling */
+.postimage-container img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #007bff;
+  border-radius: 4px;
+}
+
+.no-selection-message {
+  color: #6c757d;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-top: 15px;
+}
